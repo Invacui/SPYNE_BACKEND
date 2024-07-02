@@ -1,6 +1,6 @@
 This is a boilerplate Node.js project using Express, MongoDB, Bcrypt for password hashing, JWT for authentication, and environment setup with dotenv. It includes a Postman collection for testing API endpoints.
 
-Installation
+## Installation
 Clone the repository:
 
 bash
@@ -9,22 +9,22 @@ git clone <repository-url>
 cd <project-folder>
 Install dependencies:
 
-bash
+```bash
 Copy code
 npm install
 Set up environment variables:
 
-Create a .env file in the root directory of the project with the following variables:
+## Environment Setup
 
-plaintext
-Copy code
+To set up your environment for this project, create a `.env` file in the root directory and add the following variables:
+
+```bash
 PORT=3001
 BASE_URL=0.0.0.0
 TEST_PORT=3002
 DB_NAME=ExpressBoiler
-MONGO_URI=mongodb+srv://ASH1748:root1@ashclusters.ej6nn1h.mongodb.net/EcommerceDB?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv:/xxxxxashclusters.ej6nn1h.mongodb.net/EcommerceDB?retryWrites=true&w=majority
 PRIVATE_TOKEN_KEY=Ashutosh
-Adjust MONGO_URI and other values according to your setup.
 
 Start the server:
 
