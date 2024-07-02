@@ -10,10 +10,8 @@ cd <project-folder>
 Install dependencies:
 
 ```bash
-Copy code
 npm install
-Set up environment variables:
-
+```
 ## Environment Setup
 
 To set up your environment for this project, create a `.env` file in the root directory and add the following variables:
@@ -25,12 +23,12 @@ TEST_PORT=3002
 DB_NAME=ExpressBoiler
 MONGO_URI=mongodb+srv:/xxxxxashclusters.ej6nn1h.mongodb.net/EcommerceDB?retryWrites=true&w=majority
 PRIVATE_TOKEN_KEY=Ashutosh
-
+```
 Start the server:
 
-bash
-Copy code
-npm start
+```bash
+npm start or nodemon server.js
+```
 The server will run at http://localhost:3001.
 
 Postman Collection
