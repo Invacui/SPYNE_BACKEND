@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "d4874c4a-ff79-4beb-96dd-38e3a0d5db8d",
+		"name": "Spyne",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27728393"
+	},
+	"item": [
+		{
+			"name": "USERS",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Johds Doe\",\r\n    \"email\": \"johndoe@dexample.com\",\r\n    \"password\": \"yourpassword\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johndoe@dexample.com\",\r\n    \"password\": \"yourpassword\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg0MGIxNzM5NTMyZTM3NzY5ZjhhOTkiLCJpYXQiOjE3MTk5Mjk2MzUsImV4cCI6MTcxOTkzMzIzNX0.ZxH2_fB7p3mTamZ6B0fFmM40AE_FC3SFNvjUqqO6J0U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"update@example.com\",\r\n    \"password\": \"yourpassword\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/66840b1739532e37769f8a99",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"66840b1739532e37769f8a99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg0MGIxNzM5NTMyZTM3NzY5ZjhhOTkiLCJpYXQiOjE3MTk5Mjk2MzUsImV4cCI6MTcxOTkzMzIzNX0.ZxH2_fB7p3mTamZ6B0fFmM40AE_FC3SFNvjUqqO6J0U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/66840b1739532e37769f8a99",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"66840b1739532e37769f8a99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByQuery",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/search?name=Phn",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Phn"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DISCUSSIONS",
+			"item": [
+				{
+					"name": "postDisc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"6683d840bf10e5dfe429fec8\",\r\n  \"text\": \"This is a new discussion\",\r\n  \"image\": \"https://example.com/image.jpg\",\r\n  \"hashtags\": [\"tag1\", \"tag2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putDisc",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"text\": \"Updated discussion text\",\r\n  \"image\": \"https://example.com/new-image.jpg\",\r\n  \"hashtags\": [\"tag3\", \"tag4\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/updatepost/6683e1a99c70997caa987c90",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								"updatepost",
+								"6683e1a99c70997caa987c90"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDisc",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"text\": \"Updated discussion text\",\r\n  \"image\": \"https://example.com/new-image.jpg\",\r\n  \"hashtags\": [\"tag3\", \"tag4\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/deletepost/6683e1a99c70997caa987c90",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								"deletepost",
+								"6683e1a99c70997caa987c90"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByTag",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"6683d840bf10e5dfe429fec8\",\r\n  \"text\": \"This is a new discussion\",\r\n  \"image\": \"https://example.com/image.jpg\",\r\n  \"hashtags\": [\"tag1\", \"tag2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/tag/tag1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								"tag",
+								"tag1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByText",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"6683d840bf10e5dfe429fec8\",\r\n  \"text\": \"This is a new discussion\",\r\n  \"image\": \"https://example.com/image.jpg\",\r\n  \"hashtags\": [\"tag1\", \"tag2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/text/new",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								"text",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDiscussions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"6683d840bf10e5dfe429fec8\",\r\n  \"text\": \"This is a new discussion\",\r\n  \"image\": \"https://example.com/image.jpg\",\r\n  \"hashtags\": [\"tag1\", \"tag2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/discussions/6683e35833a532f9ee90509b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"discussions",
+								"6683e35833a532f9ee90509b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INTERACTIONS",
+			"item": [
+				{
+					"name": "postComments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDg0MGJmMTBlNWRmZTQyOWZlYzgiLCJpYXQiOjE3MTk5MjA3NTYsImV4cCI6MTcxOTkyNDM1Nn0.QLHhtn0g_sJ2qOjiUNtOnFB9qScph36UTRb1QLavpD0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"discussionId\": \"6683e35833a532f9ee90509b\",\r\n  \"userId\": \"6683d840bf10e5dfe429fec8\",\r\n  \"text\": \"This is a comment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/interaction/comments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"interaction",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postLikes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZWYwOTAzODgyZGUyZjJiNTI0OWIiLCJpYXQiOjE3MTk5MjUyMTEsImV4cCI6MTcxOTkyODgxMX0.ypcpDfsLS8Q0_chQ8jcPRJPUp6ugb6y7IR3Cb8xerUc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/interaction/6683e35833a532f9ee90509b/like",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"interaction",
+								"6683e35833a532f9ee90509b",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CommentLikes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZWYwOTAzODgyZGUyZjJiNTI0OWIiLCJpYXQiOjE3MTk5MjUyMTEsImV4cCI6MTcxOTkyODgxMX0.ypcpDfsLS8Q0_chQ8jcPRJPUp6ugb6y7IR3Cb8xerUc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/interaction/comments/6683e8925d682c85829754e9/like",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"interaction",
+								"comments",
+								"6683e8925d682c85829754e9",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZWYwOTAzODgyZGUyZjJiNTI0OWIiLCJpYXQiOjE3MTk5MjUyMTEsImV4cCI6MTcxOTkyODgxMX0.ypcpDfsLS8Q0_chQ8jcPRJPUp6ugb6y7IR3Cb8xerUc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/interaction/users/6683eefd03882de2f2b52498/follow",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"interaction",
+								"users",
+								"6683eefd03882de2f2b52498",
+								"follow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetViewCount",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgzZDdkN2JmMTBlNWRmZTQyOWZlYzIiLCJpYXQiOjE3MTk5MTY1MTEsImV4cCI6MTcxOTkyMDExMX0.qiXsFHYYhapgBlVQjsykLAl60atFq0Rz5ldy6m-1iOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/interaction/posts/6683e35833a532f9ee90509b/viewcount",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"interaction",
+								"posts",
+								"6683e35833a532f9ee90509b",
+								"viewcount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
