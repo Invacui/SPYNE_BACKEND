@@ -43,4 +43,8 @@ Database Structure
 The MongoDB database (EcommerceDB) structure should match the models and schemas defined in your project.
 Collection Relationship Diagram
 The relationship diagram for the Postman collection (Collection Definitions and Relationships.PDF) showcases the structure and dependencies of API endpoints.
+## UML Diagram
+
+![Project UML Diagram](./Uml.png)
+
 Feel free to customize this README.md according to your project's specific details and requirements. Adjust the installation steps, environment variables, and any additional setup instructions as needed.
